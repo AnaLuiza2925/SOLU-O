@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Raízes do Futuro</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#d9d3c3;
+    color:#2f2418;
+}
+
+/* HEADER */
+
+header{
+    background:linear-gradient(90deg,#5a4a32,#8b7355,#c7b08a);
+    padding:20px;
+    text-align:center;
+}
+
+header h1{
+    color:#fff;
+    font-size:42px;
+}
+
+header p{
+    color:#f5eee2;
+    margin-top:10px;
+    font-size:18px;
+}
+
+/* MENU */
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+nav button{
+    padding:12px 18px;
+    border:none;
+    border-radius:10px;
+    background:#f5eee2;
+    color:#5a4a32;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+nav button:hover{
+    background:#fff;
+    transform:scale(1.05);
+}
+
+/* ABAS */
+
+.tab{
+    display:none;
+    padding:50px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.tab.active{
+    display:block;
+}
+
+/* TÍTULOS */
+
+h2{
+    margin-bottom:15px;
+    color:#5a4a32;
+}
+
+/* CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:25px;
+}
+
+.card{
+    background:#f5eee2;
+    padding:20px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#6b4f2a;
+}
+
+.card p{
+    line-height:1.6;
+}
+
+.card button{
+    margin-top:15px;
+    padding:10px 14px;
+    border:none;
+    border-radius:10px;
+    background:#8b7355;
+    color:#fff;
+    cursor:pointer;
+}
+
+.card button:hover{
+    opacity:.9;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#5a4a32;
+    color:#fff;
+    margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+    <h1>Raízes do Futuro</h1>
+
+    <p>
+        Reconstruindo oportunidades, cultura e esperança.
+    </p>
+
+    <nav>
+        <button onclick="abrirAba('inicio')">
+            Início
+        </button>
+
+        <button onclick="abrirAba('educacao')">
+            Educação
+        </button>
+
+        <button onclick="abrirAba('empregos')">
+            Empregos
+        </button>
+
+        <button onclick="abrirAba('agricultura')">
+            Agricultura
+        </button>
+
+        <button onclick="abrirAba('cultura')">
+            Cultura
+        </button>
+    </nav>
+
+</header>
+
+<!-- INÍCIO -->
+
+<section class="tab active" id="inicio">
+
+    <h2> Bem-vindo ao Raízes do Futuro</h2>
+
+    <p style="line-height:1.8;">
+        O projeto Raízes do Futuro foi criado para ajudar no
+        desenvolvimento social, econômico e cultural dos povos africanos
+        afetados pelos impactos do imperialismo europeu.
+    </p>
+
+    <p style="margin-top:15px; line-height:1.8;">
+        Nosso objetivo é oferecer oportunidades através da educação,
+        empregos, agricultura sustentável e valorização da cultura africana.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3> Educação</h3>
+
+            <p>
+                Cursos gratuitos e capacitação profissional.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3> Empregos</h3>
+
+            <p>
+                Divulgação de vagas e incentivo ao empreendedorismo.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3> Agricultura</h3>
+
+            <p>
+                Apoio aos agricultores e produção sustentável.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3> Cultura</h3>
+
+            <p>
+                Valorização das tradições e histórias africanas.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- EDUCAÇÃO -->
+
+<section class="tab" id="educacao">
+
+    <h2> Educação</h2>
+
+    <p>
+        Área com cursos gratuitos para jovens e adultos.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>Curso de Tecnologia Básica</h3>
+
+            <p>
+                Aprenda informática, internet e criação de currículos.
+            </p>
+
+            <button>
+                Entrar no Curso
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Curso de Agricultura Sustentável</h3>
+
+            <p>
+                Técnicas modernas de plantio e economia de água.
+            </p>
+
+            <button>
+                Entrar no Curso
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Curso de Inglês</h3>
+
+            <p>
+                Inglês para comunicação e entrevistas de emprego.
+            </p>
+
+            <button>
+                Aprender
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- EMPREGOS -->
+
+<section class="tab" id="empregos">
+
+    <h2> Empregos</h2>
+
+    <p>
+        Espaço para divulgar vagas e cadastrar currículos.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>Empresa EcoFuture</h3>
+
+            <p>Vaga: Assistente Agrícola</p>
+
+            <p>Local: Quênia</p>
+
+            <button>
+                Candidatar-se
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h3>SolarTech Africa</h3>
+
+            <p>Vaga: Técnico em Energia Solar</p>
+
+            <p>Local: Nigéria</p>
+
+            <button>
+                Candidatar-se
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Criar Currículo</h3>
+
+            <p>
+                Ferramenta simples para montar currículo online.
+            </p>
+
+            <button>
+                Criar
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- AGRICULTURA -->
+
+<section class="tab" id="agricultura">
+
+    <h2>  Agricultura</h2>
+
+    <p>
+        Apoio aos pequenos agricultores e produção sustentável.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>Fazenda Verde Esperança</h3>
+
+            <p>
+                Venda de milho, feijão e frutas naturais.
+            </p>
+
+            <button>
+                Comprar
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Cooperativa Raízes da Terra</h3>
+
+            <p>
+                Produção de alimentos orgânicos.
+            </p>
+
+            <button>
+                Conhecer
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Aulas Agrícolas</h3>
+
+            <p>
+                Técnicas modernas de irrigação e cultivo.
+            </p>
+
+            <button>
+                Assistir
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CULTURA -->
+
+<section class="tab" id="cultura">
+
+    <h2> Cultura</h2>
+
+    <p>
+        Espaço para valorizar tradições africanas.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>Músicas e Danças</h3>
+
+            <p>
+                Apresentações culturais africanas.
+            </p>
+
+            <button>
+                Assistir
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h3>História dos Antepassados</h3>
+
+            <p>
+                Biblioteca sobre povos africanos.
+            </p>
+
+            <button>
+                Explorar
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Línguas Africanas</h3>
+
+            <p>
+                Mini cursos de idiomas tradicionais.
+            </p>
+
+            <button>
+                Aprender
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        Projeto Raízes do Futuro © 2026
+    </p>
+
+</footer>
+
+<!-- SCRIPT -->
+
+<script>
+
+function abrirAba(id){
+
+    let abas = document.querySelectorAll('.tab');
+
+    abas.forEach(function(aba){
+        aba.classList.remove('active');
+    });
+
+    document.getElementById(id).classList.add('active');
+}
+
+</script>
+
+</body>
+</html>
